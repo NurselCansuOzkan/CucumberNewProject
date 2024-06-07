@@ -18,6 +18,7 @@ public class DriverFactory {
         properties = ConfigReader.getProperties();
         if(browser.equals("Chrome")){
             WebDriverManager.chromedriver().setup();
+
             driver = new ChromeDriver();
         }else if(browser.equals("Firefox")){
             WebDriverManager.firefoxdriver().setup();
